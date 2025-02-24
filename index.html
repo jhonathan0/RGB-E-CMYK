@@ -9,21 +9,28 @@
 </head>
 
 <body>
-    <header style="background-color:#FF0000; color:#FFFFFF;">
+    <header>
         <h1>RGB e CMYK no Design Gráfico</h1>
         <p>Entenda como as cores influenciam o design e a comunicação visual.</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#circulo-cromatico">Círculo Cromático</a></li>
+                <li><a href="#harmonias-cromaticas">Harmonias</a></li>
+                <li><a href="#criterios-avaliacao">Critérios</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section id="inicio">
             <h2>Introdução</h2>
             <p><strong>RGB e CMYK:</strong> Modelos de cores essenciais para design digital e impressão.</p>
-            <p><strong>Paleta de Cores:</strong>
-                <span style="color:#FF0000">■</span> #FF0000 (Vermelho),
-                <span style="color:#00FF00">■</span> #00FF00 (Verde),
-                <span style="color:#0000FF">■</span> #0000FF (Azul)
-            </p>
-            <img src="./imgs/harmonia-complementar-dividida.png" alt="Círculo cromático" width="300">
+            <div class="cores">
+                <span style="background-color:#FF0000"></span>
+                <span style="background-color:#00FF00"></span>
+                <span style="background-color:#0000FF"></span>
+            </div>
         </section>
 
         <section id="circulo-cromatico">
@@ -34,55 +41,36 @@
 
         <section id="harmonias-cromaticas">
             <h2>Harmonias Cromáticas</h2>
-            <p>Combinações de cores para criar impacto visual e equilíbrio no design.</p>
+            <p>As harmonias cromáticas são fundamentais para criar impacto visual e equilíbrio no design, ajudando a direcionar a percepção do espectador e a transmitir emoções específicas. Cada tipo de combinação de cores possui uma característica única que pode ser aplicada de maneiras distintas dependendo do objetivo do projeto.</p>
+            <h3>Tipos de Harmonia Cromática:</h3>
             <ul>
-                <li><strong>Monocromática:</strong> Uma única cor em diferentes tons.</li>
-                <li><strong>Complementar:</strong> Cores opostas no círculo cromático.</li>
-                <li><strong>Análoga:</strong> Cores próximas no círculo cromático.</li>
-                <li><strong>Triádica:</strong> Três cores equidistantes no círculo.</li>
-                <li><strong>Complementar Dividida:</strong> Combina uma cor com as adjacentes da sua oposta.</li>
-                <li><strong>Quádrupla:</strong> Quatro cores equidistantes no círculo cromático.</li>
+                <li><strong>Monocromática:</strong> Usa uma única cor, variando seus tons, saturações e intensidades. Isso cria uma sensação de uniformidade e coesão. Exemplo: azul claro, azul médio e azul escuro.</li>
+                <li><strong>Complementar:</strong> Combinam cores opostas no círculo cromático, criando um contraste forte e dinâmico. Exemplo: vermelho e verde.</li>
+                <li><strong>Análoga:</strong> Usa cores adjacentes no círculo cromático, criando harmonia e suavidade. Exemplo: azul, azul-verde e verde.</li>
+                <li><strong>Triádica:</strong> Usa três cores equidistantes no círculo cromático, oferecendo um contraste equilibrado e vibrante. Exemplo: vermelho, azul e amarelo.</li>
+                <li><strong>Complementar Dividida:</strong> Combina uma cor com as duas cores adjacentes à sua cor oposta, oferecendo contraste com mais suavidade que a complementar direta. Exemplo: azul, vermelho-alaranjado e amarelo-alaranjado.</li>
+                <li><strong>Quádrupla:</strong> Usa quatro cores equidistantes no círculo cromático, criando uma paleta complexa e vibrante. Exemplo: vermelho, verde, azul e amarelo.</li>
             </ul>
         </section>
 
         <section id="criterios-avaliacao">
             <h2>Critérios de Avaliação</h2>
-
             <h3>Modelo Aditivo (RGB)</h3>
-            <ul>
-                <li><strong></strong> Explica claramente o modelo aditivo, a combinação das cores e a influência da intensidade da luz, incluindo exemplos práticos.</li>
-                <li><strong></strong> Explica RGB, mas de forma superficial ou sem exemplos.</li>
-                <li><strong></strong> Menciona RGB, mas com explicações confusas ou incompletas.</li>
-                <li><strong></strong> Explicação incorreta ou ausente.</li>
-            </ul>
-
-            <h3>Funcionamento dos Pixels</h3>
-            <ul>
-                <li><strong></strong> Explica como pixels e subpixels RGB formam cores e como a intensidade de cada um afeta a cor final.</li>
-                <li><strong></strong> Menciona pixels e subpixels, mas sem detalhar a influência da intensidade.</li>
-                <li><strong></strong> Menciona pixels sem explicar sua função no modelo RGB.</li>
-                <li><strong></strong> Explicação incorreta ou ausente.</li>
-            </ul>
-
+            <p>O modelo aditivo é utilizado em telas digitais, onde as cores são criadas pela combinação de luzes vermelha (R), verde (G) e azul (B). A combinação dessas três cores, em diferentes intensidades, cria uma ampla gama de cores. Quando todas as cores são combinadas em sua máxima intensidade (255), resulta na cor branca, e a ausência de luz resulta no preto.</p>
+            <p><strong>Exemplo prático:</strong> Em um monitor, a cor vermelha é formada com o pixel em que a luz vermelha é acesa, o verde é formado pela luz verde e o azul pela luz azul. A intensidade de cada cor influencia o resultado final da cor que vemos.</p>
             <h3>Modelo Subtrativo (CMYK)</h3>
-            <ul>
-                <li><strong></strong> Explica claramente o modelo subtrativo, a mistura de pigmentos e a necessidade do preto (K), incluindo exemplos práticos.</li>
-                <li><strong></strong> Explica CMYK, mas sem detalhar a função do preto ou as misturas.</li>
-                <li><strong></strong> Menciona CMYK, mas com explicações confusas ou incompletas.</li>
-                <li><strong></strong> Explicação incorreta ou ausente.</li>
-            </ul>
-
+            <p>Esse modelo é usado na impressão, baseado na combinação de pigmentos: ciano (C), magenta (M), amarelo (Y) e preto (K). Ao contrário do modelo RGB, as cores são formadas pela absorção de luz. Quando as cores ciano, magenta e amarelo se combinam, elas criam um tom próximo ao preto, o que justifica a adição do preto como componente (K) para uma maior profundidade e definição nas cores impressas.</p>
+            <p><strong>Exemplo prático:</strong> Quando imprimimos uma imagem, a mistura de tinta ciano, magenta e amarelo pode criar uma vasta gama de cores. Para garantir uma representação fiel da cor preta, adiciona-se o componente preto (K).</p>
             <h3>Comparação entre RGB e CMYK</h3>
             <ul>
-                <li><strong>strong> Explica bem as diferenças entre os modelos, incluindo exemplos de aplicação.</li>
-                <li><strong></strong> Menciona as diferenças, mas sem exemplos práticos.</li>
-                <li><strong></strong> Aponta que são diferentes, mas sem explicação clara.</li>
-                <li><strong></strong> Explicação incorreta ou ausente.</li>
+                <li><strong>RGB:</strong> é usado em dispositivos que emitem luz (como telas), onde a combinação de luzes coloridas cria as cores.</li>
+                <li><strong>CMYK:</strong> é usado em processos de impressão, onde a combinação de pigmentos absorve luz, formando as cores.</li>
             </ul>
+            <p>Enquanto RGB é mais adequado para o ambiente digital, CMYK é fundamental para a impressão, sendo necessário entender como cada modelo trabalha para garantir a precisão das cores, dependendo do meio de aplicação.</p>
         </section>
     </main>
 
-    <footer style="background-color:#0000FF; color:#FFFFFF;">
+    <footer>
         <p>&copy; 2025 Jhonathan G. Todos os direitos reservados.</p>
     </footer>
 </body>
