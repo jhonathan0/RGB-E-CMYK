@@ -8,68 +8,90 @@
     --cor-fundo: #FDF0D5;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding: 20px;
 }
 
 header {
-    background-color: var(--cor-primaria);
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
     color: var(--cor-terciaria);
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 header p {
-    margin: 5px 0 0;
+    margin-top: 5px;
+    font-size: 1.1rem;
+    opacity: 0.9;
 }
 
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
 
 h2 {
     color: var(--cor-quaternaria);
+    border-left: 5px solid var(--cor-quaternaria);
+    padding-left: 10px;
+    margin-bottom: 15px;
 }
 
 ul {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .harmonia-imagens {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .harmonia-imagens img {
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.harmonia-imagens img:hover {
+    transform: scale(1.05);
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: var(--cor-quaternaria);
+    padding: 15px;
+    background: var(--cor-quaternaria);
     color: var(--cor-terciaria);
     width: 100%;
     margin-top: auto;
+    border-radius: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
