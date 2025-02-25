@@ -15,9 +15,9 @@
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
-                <li><a href="#circulo-cromatico">Círculo Cromático</a></li>
-                <li><a href="#harmonias-cromaticas">Harmonias</a></li>
-                <li><a href="#criterios-avaliacao">Critérios</a></li>
+                <li><a href="#rgb">RGB</a></li>
+                <li><a href="#cmyk">CMYK</a></li>
+                <li><a href="#comparacao">Comparação</a></li>
             </ul>
         </nav>
     </header>
@@ -26,47 +26,66 @@
         <section id="inicio">
             <h2>Introdução</h2>
             <p><strong>RGB e CMYK:</strong> Modelos de cores essenciais para design digital e impressão.</p>
-            <div class="cores">
-                <span style="background-color:#FF0000"></span>
-                <span style="background-color:#00FF00"></span>
-                <span style="background-color:#0000FF"></span>
-            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/C%C3%ADrculo_Crom%C3%A1tico.png" 
+                alt="Círculo Cromático" width="300">
         </section>
 
-        <section id="circulo-cromatico">
-            <h2>O Círculo Cromático</h2>
-            <p>Ferramenta essencial no design gráfico, organizando cores em uma relação visualmente harmônica.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/C%C3%ADrculo_Crom%C3%A1tico.png" alt="Círculo Cromático" width="300">
-        </section>
-
-        <section id="harmonias-cromaticas">
-            <h2>Harmonias Cromáticas</h2>
-            <p>As harmonias cromáticas são fundamentais para criar impacto visual e equilíbrio no design, ajudando a direcionar a percepção do espectador e a transmitir emoções específicas. Cada tipo de combinação de cores possui uma característica única que pode ser aplicada de maneiras distintas dependendo do objetivo do projeto.</p>
-            <h3>Tipos de Harmonia Cromática:</h3>
+        <section id="rgb">
+            <h2>Modelo Aditivo (RGB)</h2>
+            <p>O modelo RGB é utilizado em dispositivos digitais como monitores, televisões e celulares. Ele se baseia na combinação de luzes vermelha (R), verde (G) e azul (B) para criar cores.</p>
+            <p><strong>Funcionamento dos Pixels:</strong> Cada pixel em uma tela é composto por três subpixels (vermelho, verde e azul). A intensidade de cada um deles determina a cor final exibida.</p>
+            <p>Exemplo de combinação de cores no modelo RGB:</p>
             <ul>
-                <li><strong>Monocromática:</strong> Usa uma única cor, variando seus tons, saturações e intensidades. Isso cria uma sensação de uniformidade e coesão. Exemplo: azul claro, azul médio e azul escuro.</li>
-                <li><strong>Complementar:</strong> Combinam cores opostas no círculo cromático, criando um contraste forte e dinâmico. Exemplo: vermelho e verde.</li>
-                <li><strong>Análoga:</strong> Usa cores adjacentes no círculo cromático, criando harmonia e suavidade. Exemplo: azul, azul-verde e verde.</li>
-                <li><strong>Triádica:</strong> Usa três cores equidistantes no círculo cromático, oferecendo um contraste equilibrado e vibrante. Exemplo: vermelho, azul e amarelo.</li>
-                <li><strong>Complementar Dividida:</strong> Combina uma cor com as duas cores adjacentes à sua cor oposta, oferecendo contraste com mais suavidade que a complementar direta. Exemplo: azul, vermelho-alaranjado e amarelo-alaranjado.</li>
-                <li><strong>Quádrupla:</strong> Usa quatro cores equidistantes no círculo cromático, criando uma paleta complexa e vibrante. Exemplo: vermelho, verde, azul e amarelo.</li>
+                <li>Vermelho (255,0,0)</li>
+                <li>Verde (0,255,0)</li>
+                <li>Azul (0,0,255)</li>
+                <li>Branco (255,255,255) - combinação total das três cores</li>
+                <li>Preto (0,0,0) - ausência total de luz</li>
             </ul>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/AdditiveColor.svg/512px-AdditiveColor.svg.png" 
+                alt="Esquema de Cores RGB" width="300">
         </section>
 
-        <section id="criterios-avaliacao">
-            <h2>Critérios de Avaliação</h2>
-            <h3>Modelo Aditivo (RGB)</h3>
-            <p>O modelo aditivo é utilizado em telas digitais, onde as cores são criadas pela combinação de luzes vermelha (R), verde (G) e azul (B). A combinação dessas três cores, em diferentes intensidades, cria uma ampla gama de cores. Quando todas as cores são combinadas em sua máxima intensidade (255), resulta na cor branca, e a ausência de luz resulta no preto.</p>
-            <p><strong>Exemplo prático:</strong> Em um monitor, a cor vermelha é formada com o pixel em que a luz vermelha é acesa, o verde é formado pela luz verde e o azul pela luz azul. A intensidade de cada cor influencia o resultado final da cor que vemos.</p>
-            <h3>Modelo Subtrativo (CMYK)</h3>
-            <p>Esse modelo é usado na impressão, baseado na combinação de pigmentos: ciano (C), magenta (M), amarelo (Y) e preto (K). Ao contrário do modelo RGB, as cores são formadas pela absorção de luz. Quando as cores ciano, magenta e amarelo se combinam, elas criam um tom próximo ao preto, o que justifica a adição do preto como componente (K) para uma maior profundidade e definição nas cores impressas.</p>
-            <p><strong>Exemplo prático:</strong> Quando imprimimos uma imagem, a mistura de tinta ciano, magenta e amarelo pode criar uma vasta gama de cores. Para garantir uma representação fiel da cor preta, adiciona-se o componente preto (K).</p>
-            <h3>Comparação entre RGB e CMYK</h3>
+        <section id="cmyk">
+            <h2>Modelo Subtrativo (CMYK)</h2>
+            <p>O modelo CMYK é utilizado na impressão, onde as cores são formadas pela mistura de pigmentos ciano (C), magenta (M), amarelo (Y) e preto (K).</p>
+            <p><strong>Por que a cor preta (K) é necessária?</strong> A combinação de ciano, magenta e amarelo resulta em um tom próximo ao preto, mas não é profundo o suficiente para impressão de qualidade. Por isso, o preto é adicionado para criar contraste e economizar tinta.</p>
+            <p>Exemplo de combinação de cores no modelo CMYK:</p>
             <ul>
-                <li><strong>RGB:</strong> é usado em dispositivos que emitem luz (como telas), onde a combinação de luzes coloridas cria as cores.</li>
-                <li><strong>CMYK:</strong> é usado em processos de impressão, onde a combinação de pigmentos absorve luz, formando as cores.</li>
+                <li>Ciano + Magenta = Azul</li>
+                <li>Magenta + Amarelo = Vermelho</li>
+                <li>Amarelo + Ciano = Verde</li>
+                <li>Ciano + Magenta + Amarelo = Preto</li>
             </ul>
-            <p>Enquanto RGB é mais adequado para o ambiente digital, CMYK é fundamental para a impressão, sendo necessário entender como cada modelo trabalha para garantir a precisão das cores, dependendo do meio de aplicação.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/SubtractiveColor.svg/512px-SubtractiveColor.svg.png" 
+                alt="Esquema de Cores CMYK" width="300">
+        </section>
+
+        <section id="comparacao">
+            <h2>Comparação entre RGB e CMYK</h2>
+            <table border="1">
+                <tr>
+                    <th>RGB</th>
+                    <th>CMYK</th>
+                </tr>
+                <tr>
+                    <td>Usado em telas digitais</td>
+                    <td>Usado na impressão</td>
+                </tr>
+                <tr>
+                    <td>Modelo aditivo (adição de luz)</td>
+                    <td>Modelo subtrativo (absorção de pigmentos)</td>
+                </tr>
+                <tr>
+                    <td>Combinação de vermelho, verde e azul</td>
+                    <td>Combinação de ciano, magenta, amarelo e preto</td>
+                </tr>
+                <tr>
+                    <td>Preto é ausência de luz</td>
+                    <td>Preto é a soma dos pigmentos</td>
+                </tr>
+            </table>
+            <p>Enquanto o modelo RGB é ideal para telas, o CMYK é essencial para impressão. A conversão entre os dois modelos deve ser feita corretamente para evitar distorções de cores.</p>
         </section>
     </main>
 
@@ -74,5 +93,4 @@
         <p>&copy; 2025 Jhonathan G. Todos os direitos reservados.</p>
     </footer>
 </body>
-
 </html>
