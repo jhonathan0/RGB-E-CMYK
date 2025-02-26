@@ -1,11 +1,11 @@
 :root {
     --cor-primaria: #780000;
-    --cor-secundaria: #C1121F;
+    --cor-secundaria: #ffffff;
     --cor-terciaria: #FDF0D5;
     --cor-quaternaria: #003049;
     --cor-quintenaria: #669BBC;
     --cor-texto: #333333;
-    --cor-fundo: #FDF0D5;
+    --cor-fundo: #0051ff;
 }
 
 * {
